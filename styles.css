@@ -1,0 +1,28 @@
+body{
+    background-color: black;
+    opacity: 0.7;
+}
+
+.img-fluid {
+    width: 40%;
+    height: 60%;
+}
+
+.modal-content-dynamic {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 600px) {
+    .modal-content-dynamic {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .img-fluid {
+        width: 80%;
+        height: 40%;
+    }
+}

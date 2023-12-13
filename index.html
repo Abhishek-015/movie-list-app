@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Movie List App</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1 class="text-center mt-2 mb-4">Movie List App</h1>
+
+      <div id="filters" class="mb-4 mt-2">
+        <button class="btn btn-primary my-2" id="btnNowPlaying">
+          Latest Trending Movies
+        </button>
+        <select class="form-control my-2" id="genreSelect">
+          <!-- Options will be added dynamically using JavaScript -->
+        </select>
+        <input
+          type="text"
+          class="form-control my-2"
+          id="searchInput"
+          placeholder="Search..."
+        />
+        <button class="btn btn-info my-2" id="btnSearch">Search</button>
+      </div>
+      <h2 class="my-2" id="nowPlayiing">Now Playing</h2>
+      <div id="movieList" class="row"></div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
