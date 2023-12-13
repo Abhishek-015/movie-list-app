@@ -1,4 +1,4 @@
-const apiKey = "b7734ea396cc9aefa70cfb82d9c0c01e"; // Replace with your TMDb API key
+const apiKey = "b7734ea396cc9aefa70cfb82d9c0c01e";
 const apiBaseUrl = "https://api.themoviedb.org/3";
 
 $(document).ready(function () {
