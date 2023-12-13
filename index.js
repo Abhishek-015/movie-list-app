@@ -76,10 +76,10 @@ function displayMovies(movies) {
 		const movieCard = `
             <div class="col-md-4 mb-4">
                 <div class="card" data-toggle="modal" data-target="#movieModal${movie.id}">
-                    <img src="${imageUrl}" class="card-img-top" alt="${movie.title}">
+                    <img height="400px" src="${imageUrl}" class="card-img-top" alt="${movie.title}">
                     <div class="card-body">
                         <h5 class="card-title">${movie.title}</h5>
-                        <p class="card-text">${movie.overview}</p>
+                        <p class="card-text">${movie.overview.slice(0,100)}...</p>
                     </div>
                 </div>
 
